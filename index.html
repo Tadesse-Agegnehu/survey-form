@@ -1,0 +1,84 @@
+  <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="styles.css" rel="stylesheet" type="text/css">
+     <title>freeCodeCamp project</title>
+   </head>
+   <body>
+     <div>
+       <h1 id="title">freeCodeCamp Survey Form</h1>
+       <p id="description">Thank you for taking the time to help us improve the platform</p>
+       <main>
+         <form id="survey-form" action="www.com">
+           <fieldset>
+             <label id="name-label" for="name">Name</label>
+             <input id="name" type="text" placeholder="Enter your name" class="field-size" required>
+             <label id="email-label" for="email">Email </label>
+             <input id="email" type="email" placeholder="Enter your email" class="field-size" required>
+             <label id="number-label" for="number">Age </label>
+             <input id="number" type="number" placeholder="Age" min="10" max="100" class="field-size">
+           </fieldset>
+           <fieldset>
+             <p>Which option best describes your current role?
+             <p>
+               <select id="dropdown" class="field-size">
+                 <option value="" disabled selected>Select current role</option>
+                 <option value="student">student</option>
+                 <option value="Full time job">Full time job</option>
+                 <option value="Full time learner">Full time learner</option>
+                 <option value="Prefer not to say">Prefer not to say</option>
+                 <option value="Other">Other</option>
+               </select>
+             <p>Would you recommend freeCodeCamp to a friend?</p>
+             <label>
+               <input id="reco11" type="radio" name="recommendation" value="Definitely" checked>Definitely </label>
+             <label>
+               <input id="reco12" type="radio" name="recommendation" value="Maybe">Maybe </label>
+             <label>
+               <input id="reco13" type="radio" name="recommendation" value="Not sure">Not sure </label>
+           </fieldset>
+           <fieldset>
+             <p> What is your favorite feature of freeCodeCamp?
+             <p>
+               <select id="selection" class="field-size">
+                 <option disabled selected>select an option</option>
+                 <option>challenges</option>
+                 <option>projects</option>
+                 <option>community</option>
+                 <option>open source</option>
+               </select>
+             <p>What would you like to see improved? (Check all that apply)</p>
+             <label>
+               <input id="check11" name="improved" type="checkbox" value="value">Front-end Projects </label>
+             <label>
+               <input id="check12" name="improved" type="checkbox" value="Back-end Projects">Back-end Projects </label>
+             <label>
+               <input id="check13" name="improved" type="checkbox" value="Data Visualization">Data Visualization </label>
+             <label>
+               <input id="check14" type="checkbox" name="improved" value="Challenges">Challenges </label>
+             <label>
+               <input id="check15" name="improved" type="checkbox" value="Open Source Community">Open Source Community </label>
+             <label>
+               <input id="check16" type="checkbox" name="improved" value="Gitter help rooms">Gitter help rooms </label>
+             <label>
+               <input id="check17" type="checkbox" name="improved" value="Videos">Videos </label>
+             <label>
+               <input id="check18" type="checkbox" name="improved" value="City Meet ups">City Meet ups </label>
+             <label>
+               <input id="check19" type="checkbox" name="improved" value="Wikis">Wikis </label>
+             <label>
+               <input id="check20" type="checkbox" name="improved" value="Forum">Forum </label>
+             <label>
+               <input id="check21" type="checkbox" name="improved" value="Additional Courses">Additional Courses </label>
+             <p>Any comments or suggestions?
+             <p>
+               <textarea rows="6" cols="100" name="comment" placeholder="Enter your comment here..."></textarea>
+           </fieldset>
+           <button id="submit" class="field-size">Submit</button>
+         </form>
+       </main>
+     </div>
+   </body>
+ </html>
